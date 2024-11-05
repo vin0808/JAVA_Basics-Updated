@@ -1,0 +1,52 @@
+
+
+        1. Convert an array to string in Java
+   
+        String arrayAsString = Arrays.toString(array);
+        
+        
+        2. Convert string to integer
+      
+        int number = Integer.parseInt(numberString);
+      
+        
+        3. Convert int to string
+     
+        String numAsString = Integer.toString(num);
+        
+        
+        4. Convert string to char array
+        
+        char[] charArray = str.toCharArray();
+        
+        
+        5. Find the character at a given location
+        int index = 1;
+        char charAtIndex = str.charAt(index);
+       
+        
+         6. Find the index of given character or substring (first character index)
+        
+        int charIndex = str.indexOf(searchChar);
+        
+        
+        String substring = "lo";
+        int substringIndex = str.indexOf(substring);
+       
+        
+         7. Check whether the given substring is present in the given string
+        
+        boolean isSubstringPresent = str.contains(substring);
+        
+        
+        8. Count the number of words in a given string sentence
+       
+        String[] words = sentence.split("\\s+");
+     
+       
+        
+         9. Check if two strings are the same ignoring their cases
+        
+        boolean areEqualIgnoringCase = str1.equalsIgnoreCase(str2);
+       
+

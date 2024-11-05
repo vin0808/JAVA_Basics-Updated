@@ -1,0 +1,40 @@
+Can static methods accessible by non-static methods? If no why 
+
+Yes, static methods can be accessed by non-static methods.
+Non-static methods belong to objects. Staic methods belong to class. 
+If a non static class wants to access static member or method it has to create object first and then access the static member or methods.
+(IT cannot access directly).
+If a static member wants to access non static/(static) menber it does not need an obj to access attributes and methods.
+(It can access directly).
+
+
+Can static methods accessible by static methods? If no why 
+
+Yes, static methods can be accessed by other static methods.
+Since static methods belong to the class and not to any instance, they can directly access other static methods within the same class or via the class name if in different classes.
+
+
+Can non-static methods/attributes accessible by non-static methods? if no why 
+Yes. It can.
+Because both are at instance level.
+
+Can non-static methods/attributes accessible by static methods? If no why 
+
+No. It cannot.
+Static methods do not belong to an instance of a class,
+so they cannot access instance-level (non-static) data or methods directly.
+However, if you create an instance of the class inside the static method,
+you can access non-static methods or attributes through that instance.
+
+What is the difference between ==, equals(), compareTo() in string Comparisions. 
+
+The == operator checks whether two references point to the same object in memory. 
+It does not compare the actual content of the strings.
+
+The equals() method compares the content of two strings and 
+returns true if they have the same sequence of characters.
+
+The compareTo() method compares two strings lexicographically. It returns:
+0 if the strings are equal,
+A negative value if the first string comes before the second string,
+A positive value if the first string comes after the second strin
